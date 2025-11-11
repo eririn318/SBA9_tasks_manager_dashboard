@@ -4,9 +4,7 @@ import type { Task } from "../../types";
 interface TaskListProps {
   tasks: Task[];
   // Keep the signature that matches the handler defined in DashBoard
-  // onFilterChange: (filters: {status: string; priority: 'low' | 'medium' | 'high' | ''}) => void;
   onDelete: (id: string) => void;
-  // onUpdate:(id:string, updates: Partial<Task>) => void
 }
 
 function TaskList({ tasks, onDelete }: TaskListProps) {
